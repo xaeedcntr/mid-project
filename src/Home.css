@@ -1,0 +1,7 @@
+#main-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:300px 0;
+    width: 50%;
+}
