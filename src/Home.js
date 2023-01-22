@@ -74,24 +74,8 @@ function Home() {
             <input id="original-urlbox" type="text" placeholder="Enter URL" className="form-control search-input " size="lg" value={longurl} onChange={(e) => setLongUrl(e.target.value)} required/>
             <input id="datepicker" type="date"  onChange={DateEvent} value={expiryDate} />
             <Button variant="dark" size="lg" onClick={handleClick}>Click</Button> 
-            
-            
-           
-            
-            
-             
-
-          
- 
-
         </Container>
-        {    <p id="resultp">{result}</p> }
-       
-        
-       
-        
-        
-        
+        {   <p id="resultp" >{result}</p> }
         </>
         
 
