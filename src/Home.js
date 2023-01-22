@@ -72,23 +72,25 @@ function Home() {
         <NavbarComponent />
         <Container id="main-home">
             <input id="original-urlbox" type="text" placeholder="Enter URL" className="form-control search-input " size="lg" value={longurl} onChange={(e) => setLongUrl(e.target.value)} required/>
+            <input id="datepicker" type="date"  onChange={DateEvent} value={expiryDate} />
             <Button variant="dark" size="lg" onClick={handleClick}>Click</Button> 
-            {   
-                
-               
-                loader==="true" ? <p>Loading...</p> : <p>{result}</p> 
+            
+            
            
-            }
+            
+            
              
 
           
  
 
         </Container>
+        {    <p id="resultp">{result}</p> }
+       
         
-        {/* <input type="date" selected={startDate} onChange={(date) => setStartDate(date)} /> */}
+       
         
-        <input type="date"  onChange={DateEvent} value={expiryDate} />
+        
         
         </>
         
