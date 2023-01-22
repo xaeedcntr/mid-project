@@ -11,7 +11,6 @@ function Home() {
 
     const [longurl,setLongUrl]=  useState('');
     const [result, setResult]= useState('');
-    const [loader, setLoader]=  useState('false');
     const [histories, setHistories]=useState([]);
     const [expiryDate, setExpiryDate] = useState('none');
 
@@ -27,7 +26,7 @@ function Home() {
         try{
          
             const res= await axios(`https://api.shrtco.de/v2/shorten?url=${longurl}`)
-            setLoader('false')
+    
             console.log(res.data)
             if (expiryDate === null){
                 console.log("enter")
@@ -76,7 +75,7 @@ function Home() {
             {   
                 
                
-                loader==="true" ? <p>Loading...</p> : <p>{result}</p> 
+                 <p>{result}</p> 
            
             }
              
